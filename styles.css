@@ -43,6 +43,7 @@ section h2 {
     margin-top: 40px;
     color: #ffffff;
     text-align: center;
+    display: inline-block;
 }
 
 /* Paragraphs */
