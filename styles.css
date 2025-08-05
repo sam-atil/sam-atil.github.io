@@ -1,5 +1,19 @@
 /* styles.css */
 
+
+/* links accents */
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: var(--accent);
+    padding: 3px 6px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
 /* General Body Styles */
 body {
     background-color: #121212; /* deep dark background */
