@@ -19,7 +19,7 @@ body > * {
 
 /* Header styles */
 header {
-  background-color: #1e1e1e;
+  background-color: linear-gradient(135deg, #1e1e1e, #2a2a2a);
   text-align: center;
   padding: 40px 20px;
   border-bottom: 1px solid #333;
@@ -38,7 +38,10 @@ header p {
 
 /* Section titles */
 section h2 {
-  border-bottom: 2px solid #333;
+  border-bottom: none;
+  background: linear-gradient(90deg, #00bcd4, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 5px;
   margin-top: 40px;
   color: #ffffff;
