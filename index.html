@@ -16,7 +16,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class = "fade-section">
         <h2>About Me</h2>
         <p>
             I'm a Computer Science Major at Colby College with a passion for Machine Learning and Data Science. I enjoy exploring real world applications of AI within Healthcare, Agriculture, and Game Design.
@@ -24,7 +24,7 @@
     </section>
 
     <!-- Project Section -->
-    <section id="projects">
+    <section id="projects" class = "fade-section">
         <h2>Projects</h2>
         <div class="project">
             <!-- Name of project -->
@@ -64,7 +64,7 @@
     </section>
 
     <!-- My Contact Section -->
-    <section id="contact">
+    <section id="contact" class = "fade-section">
         <h2>Contact</h2>
         <p>Email: samuel4atilano@icloud.com</p>
         <p>GitHub: <a href="https://github.com/sam-atil" target="_blank">github.com/sam-atil</a></p>
@@ -74,5 +74,20 @@
         <p>© 2025 Samuel Atilano</p>
     </footer>
 
+    <script> 
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.fade-section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.2});
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
 </body>
 </html>
