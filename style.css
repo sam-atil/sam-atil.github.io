@@ -1,0 +1,89 @@
+/*Navigation Bar Section*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #111;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s
+}
+
+
+.nav-item:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.nav-item.active {
+  background-color: #ffffff;       /* highlights the current page */
+  color: black;
+}
+
+
+/*Body Elements*/
+body {
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
+    url('images/codelines.jpg') no-repeat center center / cover;
+    background-size: cover;
+}
+
+.content {
+    padding-top: 80px;
+    text-align: center;   /* center text inside */ 
+}
+
+/*Project Elements*/
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  width: 400px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
