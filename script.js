@@ -49,7 +49,9 @@ const skills = [
     { title: "Unreal Engine"},
     { title: "Unity"},
     { title: "Blender"},
-    { title: "Neural Networks"}
+    { title: "Perceptrons"},
+    { title: "Neural Nets"},
+    { title: ""}
 ];
 
 //Skill Target Container
