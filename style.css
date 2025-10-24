@@ -67,7 +67,7 @@ body {
 .project-card {
   background-color: #1e1e1e;
   border-radius: 12px;
-  width: 400px;
+  width: 250px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -86,4 +86,57 @@ body {
   padding: 20px;
   text-align: left;
   color: white;
+  font-size: 0.8rem;
+}
+
+/* Personal Elements */
+.personal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.personal-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+.personal-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.personal-info {
+  padding: 20px;
+  text-align: left;
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+/* Skill Elements */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: #686868;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
 }
