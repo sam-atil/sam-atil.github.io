@@ -40,19 +40,27 @@ if (projectGrid) {  // <-- Only run if the element exists
 
 //Skills Section
 const skills = [
-    { title: "Python" },
-    { title: "Java" },
-    { title: "C++" },
-    { title: "JavaScript" },
-    { title: "HTML"},
-    { title: "CSS"},
-    { title: "Unreal Engine"},
-    { title: "Unity"},
-    { title: "Blender"},
-    { title: "Perceptrons"},
-    { title: "Neural Nets"},
-    { title: ""}
+    { title: "Python", field: "Programming"},
+    { title: "Java", field: "Programming"},
+    { title: "C++", field: "Programming"},
+    { title: "JavaScript", field: "Programming"},
+    { title: "HTML", field: "Programming"},
+    { title: "CSS", field: "Programming"},
+    { title: "Unreal Engine", field: "GameDesign"},
+    { title: "Unity", field: "GameDesign"},
+    { title: "Blender", field: "GameDesign"},
+    { title: "Perceptrons", field: "MachineLearning"},
+    { title: "Neural Nets", field: "MachineLearning"},
+    { title: "NumPy", field: "MachineLearning"},
+    { title: "Pandas", field: "MachineLearning"},
 ];
+
+//Field colors
+const field_colors = {
+    GameDesign: "#14DCB2",
+    MachineLearning: "#C62CB0",
+    Programming: "#0A6FE9"
+};
 
 //Skill Target Container
 const skillGrid = document.getElementById("skill-grid");
@@ -62,6 +70,11 @@ if (skillGrid) {  // <-- Only run if the element exists
     skills.forEach(skill => {
         const skill_card = document.createElement("div");
         skill_card.classList.add("skill-card");
+
+        const color = field_colors[skill.field] || "#ccc";
+        skill_card.style.borderLeft = `6px solid ${color}`;
+        skill_card.style.background = `${color}65`;
+
         skill_card.innerHTML = `<div class="skill-info"><h3>${skill.title}</h3></div>`;
         skillGrid.appendChild(skill_card);
     });
