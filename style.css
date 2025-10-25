@@ -54,19 +54,19 @@ body {
 .content {
     padding-top: 80px;
     text-align: center;   /* center text inside */ 
-    font-family:'Lucida Sans Unicode';
+    font-family:'Lucida Sans Unicode'; /*Changes font*/
 }
 
 ul {
-  list-style-type: inside;
-  text-align: center;
-  padding: 0;
+  text-align: center; /*Centers Items*/
   margin: 0 auto;
+  list-style-type: inside; 
+  padding: 0; /*removes the bullets*/
 }
 
 /*About Me Elements*/
 .custom-imgs {
-  display: flex;
+  display: flex; 
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
@@ -169,7 +169,7 @@ ul {
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px var(--shadow-color9);
+  box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 .box-p {
@@ -207,11 +207,6 @@ ul {
   color: #00d8b4;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0, 216, 180, 0.4);
-}
-
-.socials a:active {
-  transform: translate(0);
-  box-shadow: 0 2px 6px rgba(0, 191, 166, 0.3);
 }
 
 
