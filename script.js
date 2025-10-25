@@ -12,7 +12,17 @@ document.querySelectorAll(".nav-item").forEach(link => {
 //Project Section
 const projects = [
 
-   
+   {
+        title: "Convolution Network",
+        image: "images/clownfish.png",
+        description: "A Project created in my Neural Networks course, CS343. Here I created a model with Convolutional, Maxpooling, and Dropout Layers",
+        software: "VSCode, JupyterNotebooks",
+        concepts: "Convolutional, Maxpooling, Dropout Layers",
+        language: "Python",
+        link: "https://github.com/sam-atil/convolutional-network"
+    },
+
+
 
 ];
 
@@ -23,6 +33,7 @@ if (projectGrid) {  // <-- Only run if the element exists
         const card = document.createElement("a");
         card.classList.add("project-card");
         card.href = project.link;
+        card.target = "_blank"
         card.innerHTML = `
             <img src="${project.image}" alt="${project.title}" class="project-image">
             <div class="project-info">
@@ -42,17 +53,22 @@ if (projectGrid) {  // <-- Only run if the element exists
 const skills = [
     { title: "Python", field: "Programming"},
     { title: "Java", field: "Programming"},
+    { title: "MatPlotLib", field: "MachineLearning"},
+    { title: "Unreal Engine", field: "GameDesign"},
     { title: "C++", field: "Programming"},
-    { title: "JavaScript", field: "Programming"},
-    { title: "HTML", field: "Programming"},
     { title: "CSS", field: "Programming"},
     { title: "Unreal Engine", field: "GameDesign"},
+    { title: "NumPy", field: "MachineLearning"},
+    { title: "Pandas", field: "MachineLearning"},
     { title: "Unity", field: "GameDesign"},
     { title: "Blender", field: "GameDesign"},
     { title: "Perceptrons", field: "MachineLearning"},
+    { title: "HTML", field: "Programming"},
     { title: "Neural Nets", field: "MachineLearning"},
-    { title: "NumPy", field: "MachineLearning"},
-    { title: "Pandas", field: "MachineLearning"},
+    { title: "SkLearn", field: "MachineLearning"},
+    { title: "JavaScript", field: "Programming"},
+    { title: "Aseprite-PixelArt", field: "GameDesign"},
+    { title: "3D Animation-Blender", field: "GameDesign"}
 ];
 
 //Field colors
@@ -72,6 +88,7 @@ if (skillGrid) {  // <-- Only run if the element exists
         skill_card.classList.add("skill-card");
 
         const color = field_colors[skill.field] || "#ccc";
+        skill_card.style.setProperty("--shadow-color", color);
         skill_card.style.borderLeft = `6px solid ${color}`;
         skill_card.style.background = `${color}65`;
 

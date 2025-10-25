@@ -41,18 +41,20 @@ body {
     margin: 0;
     color: white;
     font-family: Arial, sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 
 
     background: 
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
     url('images/codelines.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 .content {
     padding-top: 80px;
     text-align: center;   /* center text inside */ 
+    font-family:'Lucida Sans Unicode';
 }
 
 /*Project Elements*/
@@ -126,17 +128,64 @@ body {
 
 /* Skill Elements */
 .skill-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
 }
 
 .skill-card {
-    background-color: #686868;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #686868;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px var(--shadow-color9);
+}
+
+.box-p {
+  background-color: rgb(48, 48, 48);
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 60%;
+  margin: 0 auto;
+
+  line-height: 1.5;
+}
+
+/*Contact Me Elements*/
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.socials a {
+  background: #00bfa6;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,191,166,0.3);
+}
+
+.socials a:hover {
+  color: #00d8b4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 216, 180, 0.4);
+}
+
+.socials a:active {
+  transform: translate(0);
+  box-shadow: 0 2px 6px rgba(0, 191, 166, 0.3);
 }
