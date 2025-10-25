@@ -57,6 +57,30 @@ body {
     font-family:'Lucida Sans Unicode';
 }
 
+ul {
+  list-style-type: inside;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*About Me Elements*/
+.custom-imgs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
 /*Project Elements*/
 .project-grid {
   display: flex;
@@ -153,8 +177,8 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   width: 60%;
-  margin: 0 auto;
-
+  margin: 10px auto;
+  border: 2px solid white;
   line-height: 1.5;
 }
 
@@ -188,4 +212,12 @@ body {
 .socials a:active {
   transform: translate(0);
   box-shadow: 0 2px 6px rgba(0, 191, 166, 0.3);
+}
+
+
+/*Shattered Phases Elements */
+#timeline {
+  height: 300px;
+  width: 800px;
+  object-fit: fill;
 }
