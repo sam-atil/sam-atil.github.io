@@ -107,7 +107,7 @@ const personal_projs = [
         software: "Aseprite, GameMaker Studio",
         concepts: "Turn-Based RPG",
         language: "Javascript",
-        link: "/projects/shattered.html"
+        link: "projects/shattered.html"
     }
 ];
 
