@@ -67,12 +67,18 @@ nav a:hover {
 }
 
 .project-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    background: white;
+    display: flex; /*Prevents Element stretch*/
+    flex-direction: column;
+
+    max-width: 320px; /*Controls Width*/
+    width: 100%;
+
+    text-decoration: none; /*Removes Underlines*/
     border-radius: 16px;
     overflow: hidden;
+
+    color: inherit;
+    background: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

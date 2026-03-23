@@ -2,20 +2,33 @@
 //Projects Page - Filtering Logic
 //================================
 
-const buttons = document.querySelectorAll('.filter-btn')
-const project_cards = document.querySelectorAll('.project-card')
+const filterButtons = document.querySelectorAll('.filter-btn')
+const projects = document.querySelectorAll('.project-card')
 
-buttons.forEach(btn => {
-    btn.addEventListener('click', () =>{
-        const type = btn.dataset.type;
+let activeFilter = "All";
 
-        project_cards.forEach(card =>{
-            if (type == "All" || card.dataset.type === type) {
-                card.style.display = "block";
-            }
-            else {
-                card.style.display = "none";
-            }
-        });
+filterButtons.forEach(btn => {
+    btn.addEventListener("click", ()=>{
+
+        //Update active Button
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeFilter = btn.dataset.type;
+        applyFilters();
     });
 });
+
+
+function applyFilters() {
+    projects.forEach(project => {
+        const type = project.dataset.type;
+
+        const matchesFilter = activeFilter === "All" || type === activeFilter;
+        if(matchesFilter){
+            project.style.display = "";
+        }
+        else {
+            project.style.display = "none";
+        }
+    });
+}
