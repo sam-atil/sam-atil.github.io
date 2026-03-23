@@ -17,3 +17,109 @@ nav a:hover {
     background-color: #333;
     border-radius: 4px;
 }
+
+
+/* ================================
+   Projects Page
+   ================================ */
+.projects-page {
+    padding: 2rem;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.project-filter {
+    display: flex;
+    gap: 0.75rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+    background: #ddd;
+}
+
+.filter-btn.active {
+    background: #333;
+    color: white;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.project-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-title {
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-type {
+    font-size: 0.75rem;
+    background: #eee;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+
+.project-tech span {
+    font-size: 0.75rem;
+    background: #ddd;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}

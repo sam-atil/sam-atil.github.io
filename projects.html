@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Samuel Atilano — Home</title>
+        <title>Samuel Atilano — Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="css/skeleton.css" />
@@ -34,15 +34,58 @@
         <!-- NAVBAR END c-->
 
         
-        <!-- Page Specific Content -->
-        <main>
-            
+        <!-- MAIN CONTENT -->
+        <main class="projects-page">
+            <!-- Page Specific Content -->
+            <div class="projects-container">
+                <!-- Project Info Card -->
+                <div class="projects-intro card">
+                    <h1>My Projects</h1>
+                    <p> Place Holder Text </p>
+                </div>
+
+                <!-- Filter Bar -->
+                <div class="project-filter">
+                    <button class="filter-btn active" data-type="All">All</button>
+                    <button class="filter-btn" data-type="Computer Vision">Computer Vision</button>
+                    <button class="filter-btn" data-type="Machine Learning">Machine Learning</button>
+                    <button class="filter-btn" data-type="Deep Learning">Deep Learning</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="project-grid">
+                    <!--Example Project Card-->
+                    <a href="projects/project1.html" class="project-card" data-type="Machine Learning">
+                        <div class="project-image">
+
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Project Name</h3>
+                            <p class="project-description">
+
+                            </p>
+                            <div class="project-meta">
+                                <span class="project-type">
+
+                                </span>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>NumPy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
         </main>
 
 
         <!-- Footer Section -->
          <footer>
-
+            <p>© 2026 Samuel Atilano</p>
          </footer>
 
     </body>
