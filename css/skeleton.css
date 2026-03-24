@@ -18,6 +18,77 @@ nav a:hover {
     border-radius: 4px;
 }
 
+body {
+    background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+}
+
+/* ================================
+   Home Page
+   ================================ */
+
+.home-page {
+    padding: 2rem;
+}
+.home-container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-card {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+    background: white;
+    border-radius: 16px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.home-card::before{
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle, rgba(0,0,0,0.05), transparent);
+    z-index: -1;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.home-title span {
+    color: #333;
+}
+.home-roles {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.home-description {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.btn.primary {
+    background: #333;
+    text-decoration: none;
+    color: white;
+}
+.btn.secondary{
+    background: #eee;
+    text-decoration: none;
+    color: #333;
+}
 
 /* ================================
    About Page
