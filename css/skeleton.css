@@ -230,3 +230,110 @@ nav a:hover {
   background: #2196f3;
   color: white;
 }
+
+
+
+
+/* ================================
+   Contact Page
+   ================================ */
+
+.contact-page {
+    padding: 2rem;
+}
+
+.contact-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact-header h1 {
+    margin-bottom: 0.5rem;
+}
+.contact-header p {
+    color: #555;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-pill {
+    display: block;
+    color: black;
+
+    background: grey;
+    padding: 1rem;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+
+.contact-pill:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.contact-pill span {
+    font-size: 0.8rem;
+}
+
+.contact-pill p {
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.contact-main {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.contact-main h2 {
+    margin-bottom: 0.75rem;
+}
+.contact-main p {
+    margin-bottom: 0.75rem;
+}
+
+.status-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+
+    border-radius: 10px;
+    font-weight: 500;
+}
+.status-banner.available {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+.status-banner.available .status-dot{
+    background: #2e7d32;
+}
+.status-banner.unavailable {
+    background: #fdecea;
+    color: #c62828;
+}
+.status-banner.unavailable .status-dot {
+    background: #c62828;
+}
+
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
