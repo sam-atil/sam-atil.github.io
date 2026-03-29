@@ -1,6 +1,6 @@
 :root {
     /* default = light theme */
-    --bg-gradient: linear-gradient(180deg, #f8fafc, #eef2f7);
+    --bg-gradient: linear-gradient(180deg, #e9edf0, #eaeef1);
 
     --card-bg: #ffffff;
     --card-secondary: #f1f5f9;
