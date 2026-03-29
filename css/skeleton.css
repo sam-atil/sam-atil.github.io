@@ -1,30 +1,56 @@
+
+
+/* ==============================*/
+/* skeleton.css - Structure Only */
+/* ==============================*/
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ==============================*/
+/* Section - Base Styles         */
+/* ==============================*/
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #111;
+
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+
     padding: 10px 20px;
 }
-
 nav a {
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
     margin-right: 20px;
     padding: 8px 12px;
 }
-
 nav a:hover {
-    background-color: #333;
-    border-radius: 4px;
+    background-color: var(--hover-bg);
+    color: var(--text-main);
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+    background: var(--bg-gradient);
+    color: var(--text-main);
 }
 
-/* ================================
-   Home Page
-   ================================ */
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px var(--shadow-sm);
+}
+
+/* ==============================*/
+/* Section - Home Page           */
+/* ==============================*/
 
 .home-page {
     padding: 2rem;
@@ -43,10 +69,10 @@ body {
     padding: 2rem;
     position: relative;
 
-    background: white;
+    background: var(--card-bg);
     border-radius: 16px;
 
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px var(--shadow-md);
 }
 .home-card::before{
     content: "";
@@ -61,15 +87,15 @@ body {
     margin-bottom: 0.5rem;
 }
 .home-title span {
-    color: #333;
+    color: var(--text-main);
 }
 .home-roles {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--text-muted);
     margin-bottom: 1rem;
 }
 .home-description {
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 1.5rem;
 }
 
@@ -80,14 +106,14 @@ body {
     flex-wrap: wrap;
 }
 .btn.primary {
-    background: #333;
+    background: var(--text-main);
     text-decoration: none;
-    color: white;
+    color: var(--card-bg);
 }
 .btn.secondary{
-    background: #eee;
+    background: var(--card-secondary);
     text-decoration: none;
-    color: #333;
+    color: var(--text-main);
 }
 
 /* ================================
@@ -109,6 +135,7 @@ body {
     margin-bottom: 0.75rem;
 }
 .about-main p {
+    color: var(--text-muted);
     margin-bottom: 0.75rem;
 }
 
@@ -132,11 +159,13 @@ body {
 .history-sub {
     display: block;
     font-size: 0.9rem;
+    color: var(--text-main)
 }
 .history-time {
     display: block;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
+    color: #999
 }
 
 .work-grid {
@@ -174,12 +203,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
 }
-.card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+
 .project-filter {
     display: flex;
     gap: 0.75rem;
@@ -191,18 +215,18 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 999px;
     border: none;
-    background: #eee;
+    background: var(--card-secondary);
     cursor: pointer;
     transition: 0.2s ease;
 }
 
 .filter-btn:hover {
-    background: #ddd;
+    background: var(--hover-bg);
 }
 
 .filter-btn.active {
-    background: #333;
-    color: white;
+    background: var(--text-main);
+    color: var(--card-bg);
 }
 .project-grid {
     display: grid;
@@ -222,14 +246,14 @@ body {
     overflow: hidden;
 
     color: inherit;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px var(--shadow-md);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px var(--shadow-md);
 }
 
 .project-image img {
@@ -248,7 +272,7 @@ body {
 
 .project-description {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 1rem;
 }
 
@@ -262,14 +286,14 @@ body {
 
 .project-type {
     font-size: 0.75rem;
-    background: #eee;
+    background: var(--card-secondary);
     padding: 0.25rem 0.5rem;
     border-radius: 6px;
 }
 
 .project-tech span {
     font-size: 0.75rem;
-    background: #ddd;
+    background: var(--hover-bg);
     padding: 0.25rem 0.5rem;
     border-radius: 6px;
 }
@@ -310,10 +334,10 @@ body {
 }
 
 .skills-card {
-    background: grey;
+    background: var(--card-secondary);
     padding: 1.25rem;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 10px var(--shadow-md);
     
     display: flex;
     flex-direction: column;
@@ -324,7 +348,7 @@ body {
 
 .skills-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 18px var(--shadow-sm);
 }
 
 .skills-card h3{
@@ -399,7 +423,7 @@ body {
     margin-bottom: 0.5rem;
 }
 .contact-header p {
-    color: #555;
+    color: var(--text-muted);
 }
 
 .contact-grid {
@@ -411,19 +435,19 @@ body {
 
 .contact-pill {
     display: block;
-    color: black;
+    color: var(--text-muted);
 
-    background: grey;
+    background: var(--text-main);
     padding: 1rem;
     border-radius: 12px;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px var(--shadow-sm);
     transition: 0.2s ease;
 }
 
 .contact-pill:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px var(--shadow-md);
 }
 
 .contact-pill span {
@@ -443,6 +467,7 @@ body {
     margin-bottom: 0.75rem;
 }
 .contact-main p {
+    color: var(--text-muted);
     margin-bottom: 0.75rem;
 }
 
