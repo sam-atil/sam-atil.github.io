@@ -74,28 +74,22 @@ body {
 
     box-shadow: 0 6px 20px var(--shadow-md);
 }
-.home-card::before{
-    content: "";
-    position: absolute;
-    inset: -20px;
-    background: radial-gradient(circle, rgba(0,0,0,0.05), transparent);
-    z-index: -1;
-}
 
 .home-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    color: va(--accent);
 }
 .home-title span {
     color: var(--text-main);
 }
 .home-roles {
     font-size: 1.2rem;
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: 1rem;
 }
 .home-description {
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: 1.5rem;
 }
 
@@ -106,19 +100,16 @@ body {
     flex-wrap: wrap;
 }
 .btn.primary {
-    background: var(--text-main);
-    text-decoration: none;
-    color: var(--card-bg);
-}
-.btn.secondary{
     background: var(--card-secondary);
     text-decoration: none;
     color: var(--text-main);
+    padding: .25rem;
+    border-radius: 5px;
 }
 
-/* ================================
-   About Page
-   ================================ */
+/* ==============================*/
+/* Section - About Page          */
+/* ==============================*/
 .about-page {
     padding: 2rem;
 }
@@ -135,7 +126,7 @@ body {
     margin-bottom: 0.75rem;
 }
 .about-main p {
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: 0.75rem;
 }
 
@@ -176,7 +167,7 @@ body {
 }
 
 .work-pill {
-    background: white;
+    background: var(--card-third);
     padding: 1rem 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -192,9 +183,9 @@ body {
 }
 
 
-/* ================================
-   Projects Page
-   ================================ */
+/* ==============================*/
+/* Section - Project Page        */
+/* ==============================*/
 .projects-page {
     padding: 2rem;
 }
@@ -202,6 +193,11 @@ body {
 .projects-container {
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.projects-intro {
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .project-filter {
@@ -216,6 +212,7 @@ body {
     border-radius: 999px;
     border: none;
     background: var(--card-secondary);
+    color: var(--text-main);
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -253,7 +250,7 @@ body {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px var(--shadow-md);
+    box-shadow: 0 8px 25px var(99, 102, 241, 0.15);
 }
 
 .project-image img {
@@ -299,9 +296,9 @@ body {
 }
 
 
-/* ================================
-   Skills Page
-   ================================ */
+/* ==============================*/
+/* Section - Skills Page         */
+/* ==============================*/
 .skills-page {
     padding: 2rem;
 }
@@ -334,7 +331,7 @@ body {
 }
 
 .skills-card {
-    background: var(--card-secondary);
+    background: var(--card-bg);
     padding: 1.25rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px var(--shadow-md);
@@ -402,9 +399,9 @@ body {
 
 
 
-/* ================================
-   Contact Page
-   ================================ */
+/* ==============================*/
+/* Section - Contact Page        */
+/* ==============================*/
 
 .contact-page {
     padding: 2rem;
@@ -437,7 +434,7 @@ body {
     display: block;
     color: var(--text-muted);
 
-    background: var(--text-main);
+    background: var(--card-third);
     padding: 1rem;
     border-radius: 12px;
 
@@ -484,11 +481,11 @@ body {
     font-weight: 500;
 }
 .status-banner.available {
-    background: #e8f5e9;
-    color: #2e7d32;
+    background: #e8eff5;
+    color: #2e407d;
 }
 .status-banner.available .status-dot{
-    background: #2e7d32;
+    background: #3a2e7d;
 }
 .status-banner.unavailable {
     background: #fdecea;
