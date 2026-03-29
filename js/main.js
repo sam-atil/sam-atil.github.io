@@ -1,4 +1,45 @@
 //================================
+//Page Template - Theme Logic
+//================================
+
+document.addEventListener("DOMContentLoaded", () =>{
+    const toggleBtn = document.getElementById("theme-toggle");
+    const htmlEl = document.documentElement;
+
+    //Apply saved theme on load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        htmlEl.classList.remove("light", "dark"); //Remove previous theme
+        htmlEl.classList.add(savedTheme);
+        updateToggleText(savedTheme);
+    }
+    else {
+        updateToggleText(htmlEl.classList.contains("dark") ? "dark" : "light");
+    }
+
+    //Toggle on click
+    toggleBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let current = htmlEl.classList.contains("dark") ? "dark" : "light";
+        let next = current === "dark" ? "light" : "dark";
+
+        htmlEl.classList.remove(current);
+        htmlEl.classList.add(next);
+
+        localStorage.setItem("theme", next);
+        updateToggleText(next);
+    });
+
+    function updateToggleText(theme){
+        toggleBtn.textContent = theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+    }
+
+});
+
+
+
+//================================
 //Projects Page - Filtering Logic
 //================================
 

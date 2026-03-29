@@ -1,0 +1,41 @@
+:root {
+    /* default = light theme */
+    --bg: #f5f7fa;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+
+    --card-bg: #ffffff;
+    --card-secondary: #f1f5f9;
+
+    --text-main: #111827;
+    --text-muted: #6b7280;
+
+    --accent: #4f46e5;
+
+    --border: rgba(0,0,0,0.05);
+
+    --hover-bg: #e5e7eb;
+
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.08);
+    --shadow-md: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* DARK MODE OVERRIDES */
+html.dark {
+    --bg: #0b0f1a;
+    --bg-gradient: linear-gradient(135deg, #0b0f1a, #111827);
+
+    --card-bg: #111827;
+    --card-secondary: #1f2937;
+
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+
+    --accent: #6366f1;
+
+    --border: rgba(255,255,255,0.05);
+
+    --hover-bg: #1f2937;
+
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.4);
+    --shadow-md: 0 6px 20px rgba(0,0,0,0.6);
+}
