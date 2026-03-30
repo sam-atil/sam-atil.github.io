@@ -105,12 +105,13 @@ footer {
     flex-wrap: wrap;
 }
 .btn.primary {
-    background: var(--card-secondary);
+    background: var(--card-2);
     text-decoration: none;
     color: var(--text-main);
     padding: .25rem;
     border-radius: 5px;
 }
+
 
 /* ==============================*/
 /* Section - About Page          */
@@ -143,6 +144,7 @@ footer {
 }
 .history-card {
     padding: 1.25rem;
+    background: var(--card-4);
 }
 
 .history-item h3 {
@@ -161,7 +163,7 @@ footer {
     display: block;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
-    color: #999
+    color: var(--text-muted)
 }
 
 .work-grid {
@@ -172,7 +174,7 @@ footer {
 }
 
 .work-pill {
-    background: var(--card-third);
+    background: var(--card-3);
     padding: 1rem 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -222,7 +224,7 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 999px;
     border: none;
-    background: var(--card-secondary);
+    background: var(--card-2);
     color: var(--text-main);
     cursor: pointer;
     transition: 0.2s ease;
@@ -254,7 +256,7 @@ footer {
     overflow: hidden;
 
     color: inherit;
-    background: var(--card-bg);
+    background: var(--card-4);
     box-shadow: 0 4px 12px var(--shadow-md);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -294,7 +296,7 @@ footer {
 
 .project-type {
     font-size: 0.75rem;
-    background: var(--card-secondary);
+    background: var(--card-2);
     padding: 0.25rem 0.5rem;
     border-radius: 6px;
 }
@@ -331,7 +333,15 @@ footer {
 
 .project-second {
     padding: 1rem;
-    background: var(--card-bg);
+    background: var(--card-2);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px var(--shadow-md);
+    text-align: left;
+}
+
+.project-third {
+    padding: 1rem;
+    background: var(--card-4);
     border-radius: 16px;
     box-shadow: 0 4px 12px var(--shadow-md);
     text-align: left;
@@ -381,7 +391,7 @@ footer {
 }
 
 .skills-card {
-    background: var(--card-bg);
+    background: var(--card-4);
     padding: 1.25rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px var(--shadow-md);
@@ -432,18 +442,18 @@ footer {
 }
 
 .skill-level.Core {
-  background: #4caf50;
-  color: white;
+  background: var(--core);
+  color: var(--text-main);
 }
 
 .skill-level.Working-Knowledge {
-  background: #ff9800;
-  color: white;
+  background: var(--working);
+  color: var(--text-main);
 }
 
 .skill-level.Familiar {
-  background: #2196f3;
-  color: white;
+  background: var(--familiar);
+  color: var(--text-main);
 }
 
 
@@ -484,7 +494,7 @@ footer {
     display: block;
     color: var(--text-muted);
 
-    background: var(--card-third);
+    background: var(--card-3);
     padding: 1rem;
     border-radius: 12px;
 
