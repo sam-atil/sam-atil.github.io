@@ -5,6 +5,8 @@
 document.addEventListener("DOMContentLoaded", () =>{
     const toggleBtn = document.getElementById("theme-toggle");
     const htmlEl = document.documentElement;
+    const textEl = document.getElementById("theme-text");
+    const iconEl = document.getElementById("theme-icon");
 
     //Apply saved theme on load
     const savedTheme = localStorage.getItem("theme");
@@ -32,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     });
 
     function updateToggleText(theme){
-        toggleBtn.textContent = theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+        textEl.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+        iconEl.src = theme === "dark" ? "assets/star.png" : "assets/moon.png"; 
     }
 
 });

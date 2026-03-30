@@ -10,10 +10,6 @@
     padding: 2rem;
 }
 
-/* ==============================*/
-/* Section - Base Styles         */
-/* ==============================*/
-
 nav {
     display: flex;
     align-items: center;
@@ -46,6 +42,10 @@ body {
     padding: 1.5rem;
     border: 1px solid var(--border);
     box-shadow: 0 4px 12px var(--shadow-sm);
+}
+.icon {
+    width: 18px;
+    height: 18px;
 }
 
 /* ==============================*/
@@ -106,6 +106,7 @@ body {
     padding: .25rem;
     border-radius: 5px;
 }
+
 
 /* ==============================*/
 /* Section - About Page          */
