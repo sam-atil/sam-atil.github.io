@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     function updateToggleText(theme){
         textEl.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
-        iconEl.src = theme === "dark" ? "assets/star.png" : "assets/moon.png"; 
+        iconEl.src = theme === "dark" ? "/assets/star.png" : "/assets/moon.png"; 
     }
 
 });
